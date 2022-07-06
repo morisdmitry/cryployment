@@ -1,0 +1,63 @@
+.demo-button {
+
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px 36px;
+gap: 12px;
+
+width: 203px;
+height: 64px;
+
+background: #FFD579;
+border-radius: 12px;
+
+  outline: none;
+  border: none;
+cursor: pointer;
+color: #131313;
+  cursor: pointer;
+  &:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #FFD579;
+  }
+  &:active {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), #FFD579;
+  }
+}
+
+//mobile 
+
+.demo-button-mobile {
+
+  font-family: 'Play';
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 132.08px;
+  max-width: 132.08px;
+  height: 35.47px;
+  padding: 8px 12px;
+  background: #FFD579;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  gap: 12px;
+  line-height: 29px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #131313;
+  &:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #FFD579;
+  }
+  &:active {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), #FFD579;
+  }
+}

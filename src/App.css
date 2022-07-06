@@ -13,6 +13,31 @@
   }
 }
 
+@font-face {
+	font-family: 'TerminatorCur'; 
+	src: url(./fonts/TerminatorCyr/terminatorcyr_semi_expandedbold.ttf); 
+}
+
+@font-face {
+	font-family: 'Incompleeta'; 
+	src: url(./fonts/Incompleeta/IncompleetaRegular.woff); 
+}
+
+@font-face {
+	font-family: 'Play'; 
+	src: url(./fonts/Play/Play-Regular.ttf); 
+}
+
+@font-face {
+	font-family: 'Play-Bold'; 
+	src: url(./fonts/Play/Play-Bold.ttf); 
+}
+
+@font-face {
+	font-family: 'Audiowide'; 
+	src: url(./fonts/Audiowide/Audiowide-Regular.ttf); 
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

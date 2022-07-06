@@ -1,0 +1,174 @@
+@import "../styles/styles.scss";
+
+.menu-wrapper-mobile {
+  width: 100%;
+  background: #131313;
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 92%;
+  box-sizing: border-box;
+}
+
+.menu-logo-wrapper-mobile {
+  width: 100%;
+  margin: 0 auto;
+  height: 68px;
+  display: flex;
+  flex-direction: row;
+  padding: 27px 10px 23px 10px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.menu-logo-mobile {
+  background-image: url("./images/logo-mobile.png");
+  width: 160px;
+  height: 16px;
+  background-repeat: no-repeat;
+}
+
+.menu-close-button-mobile {
+  background-image: url("./images/close-button.svg");
+  width: 25px;
+  height: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-right: 20px;
+  box-sizing: border-box;
+  margin: -5px 0 0px 0;
+}
+
+.about-us-container-mobile .what-is-ergonza-mobile {
+  padding-top: 0;
+}
+
+.menu-nav-wrapper-mobile {
+  @include wrap-content-mobile;
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  height: 65%;
+}
+
+.menu-footer-wrapper-mobile {
+  @include wrap-content-mobile;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  height: 15%;
+}
+
+.menu-nav-mobile_en {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.menu-nav-mobile_ru {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+
+.menu-nav-mobile_en a {
+  margin-bottom: 10px;
+  font-family: 'Audiowide';
+  font-size: 24px;
+  line-height: 31px;
+  color: #FFFFFF;
+&:hover{
+  color: #FFD579;
+}
+}
+
+.menu-nav-mobile_ru a {
+  margin-bottom: 10px;
+  font-family: 'TerminatorCur';
+  font-size: 16px;
+  line-height: 31px;
+  color: #FFFFFF;
+&:hover{
+  color: #FFD579;
+}
+}
+
+.mob-hov {
+  display: flex;
+  align-items: center;
+  height: 52px;
+  padding: 0 10px 0 10px;
+  &:hover {
+    display: flex;
+    align-items: center;
+    height: 52px;
+    align-items: center;
+  }
+}
+
+.about-us-arrow {
+  background-image: url('./images/arrow.svg');
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  display: flex;
+}
+
+.up {
+  transform: rotate(180deg);
+}
+
+.about-us-container-mobile {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.about-us-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start!important;
+}
+
+.about-us-arrow-mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact-us-button-mobile {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 132.08px;
+height: 35.47px;
+padding: 8px 12px;
+  background: #FFD579;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  gap: 12px;
+  line-height: 29px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #131313;
+}

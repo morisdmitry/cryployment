@@ -1,0 +1,61 @@
+{
+    "test": "test",
+    "pick-language": "En",
+    "home": "Home",
+    "how_it_works": "how it works",
+    "who_we_are": "who we are",
+    "faq": "faq",
+    "contact-us": "Contact Us",
+
+    "block1-header1": "New form of employees staffing withn WEB3",
+    "block1-header2": "Provide legal forms of labor cost optimization & pay your employees wherever they are",
+
+    "block2-header1": "Who we are",
+    "block2-header2": "UAE based outstaffing company applying benefits of WEB3 tools",
+    "block2-el1-header": "UAE",
+    "block2-el1-text": "bringing free zone benefits for your business",
+    "block2-el2-header": "Russian based",
+    "block2-el2-text": "IT company with all corresponding fiscal benefits",
+    "block2-el3-header": "Vast experience",
+    "block2-el3-text": "in outstaffing & outsourcing solutions",
+
+    "block3-header1": "We provide flexibilty",
+    "block3-el1-header": "Budget",
+    "block3-el1-text": "legal tools of optimizations",
+    "block3-el2-header": "Geography",
+    "block3-el2-text": "work is not a office, it’s about people no matter where they are",
+    "block3-el3-header": "Payments",
+    "block3-el3-text": "Cryptocurrency is the new idea",
+
+    "block4-header1": "How it works",
+    "block4-el1-text1": "Personnel stays within Client",
+    "block4-el1-text2": "Part of payments transfer to crypto tools",
+    "block4-el2-text1": "Personnel stays within Russian legislative perimeter, with transfer of HR-administration",
+    "block4-el2-text2": "Major part of payments transfer to crypto tools",
+    "block4-el3-text1": "Personnel outside of Russian legislative perimeter",
+    "block4-el3-text2": "All payments transfer to crypto tools",
+    "block4-el4-text1": "Personnel outside of Russian legislative perimeter",
+    "block4-el4-text2": "Client outside of Russian legislative perimeter",
+    "block4-el4-text3": "All payments transfer to crypto tools",
+    "block4-header-bottom": "budget savings",
+
+    "block5-header1": "FAQ",
+    "block5-question1": "Do you work only via cryptocurrency tool?",
+    "block5-question2": "Do you provide recruitment services?",
+    "block5-question3": "Do you work only with some specific type of employees (i.e. IT)?",
+    "block5-question4": "How is it different from existing outstaffing agencies?",
+    "block5-question5": "Is it legitimate service?",
+
+    "block-footer-header": "Stop employ — start cryploy",
+
+
+    "popup-header": "Request for feedback",
+    "popup-text": "We’ll answer your questions and help you to decide.",
+
+
+    "name": "Your name",
+    "company": "Your company",
+    "email": "Your Email",
+    "send": "Leave a request"
+
+}

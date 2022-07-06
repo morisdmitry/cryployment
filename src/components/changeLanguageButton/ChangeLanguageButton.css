@@ -1,0 +1,164 @@
+/* .language{
+    width: 100px;
+} */
+
+.language-icon {
+  background-image: url("./icons/lang-icon.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-right: 10px;
+}
+
+svg {
+  fill: white;
+}
+
+.language {
+    position: relative;
+    margin-right: 20px;
+}
+
+.change-lang-footer {
+  margin-bottom: 19px;
+  height: 40px;
+  margin-left: -10px;
+  font-size: 16px;
+}
+
+.language-wrapper {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.drop-down {
+  background: white;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 123px;
+    height: 70px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+    top: 51px;
+    right: -11px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.drop-down-footer {
+  top: 30px;
+  left: 5px;
+}
+
+.drop-down.active {
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+  z-index: 200;
+}
+
+.rus,
+.eng {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.rus:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), #FFD579;
+}
+
+.eng:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), #FFD579;
+}
+
+.rus {
+  border-radius: 0 0 12px 12px;
+}
+
+.eng {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px 12px 0 0;
+}
+
+.changeLang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* //mobile */
+
+.pick-language-mobile {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 15px;
+}
+
+.language-icon-mobile {
+  background-image: url("./icons/lang-icon-mobile.svg");
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-right: 10px;
+}
+
+.drop-down-mobile {
+  background: white;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 63px;
+  height: 60px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  top: -10px;
+  left: 59px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.drop-down-mobile.active {
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+}
+
+.changeLang-mobile {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-mobile {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  align-items: center;
+  display: flex;
+}
+
+.language-wrapper-footer-mobile {
+  padding-left: 0px;
+}

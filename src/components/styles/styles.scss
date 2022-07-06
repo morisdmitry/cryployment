@@ -1,0 +1,128 @@
+//mobile
+
+@mixin font-header-mobile-black {
+  font-family: "Proxima Nova Thin", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+@mixin font-header-mobile-black-2nd-level {
+  font-family: "Proxima Nova Thin", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+@mixin font-header-mobile-white {
+  font-family: "Proxima Nova Thin", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+@mixin font-text-mobile {
+  font-family: "Proxima Nova Thin", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
+@mixin font-text-white-mobile {
+  font-family: "Proxima Nova Thin", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+@mixin wrap-content-mobile {
+  width: 100%;
+  padding: 0 24px 0 24px;
+  font-family: Play;
+  margin: 0 auto;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+//default
+
+@mixin wrap-content {
+  max-width: 1120px;
+  padding: 0 24px 0 24px;
+  font-family: "Proxima Nova Thin", sans-serif;
+  margin: 0 auto;
+  height: 100%;
+}
+
+@mixin noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin font-header-black {
+  font-family: "Proxima Nova Thin", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 58px;
+  line-height: 70px;
+  color: #000000;
+}
+
+@mixin font-header-white {
+  font-family: "Proxima Nova Thin", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 70px;
+  color: #ffffff;
+}
+
+@mixin font-header-2nd-level {
+  font-family: "Proxima Nova Thin", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  color: #000000;
+}
+
+@mixin font-text-black {
+  font-family: "Proxima Nova Thin", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+@mixin font-text-white {
+  font-family: "Proxima Nova Thin", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+//only for header block
+@mixin font-header {
+  font-family: "Proxima Nova Thin", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}

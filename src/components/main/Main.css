@@ -1,0 +1,25 @@
+body{
+    background: #131313;
+}
+
+
+.main-wrapper{
+
+    color: #FFFFFF;
+    max-width: 1400px;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+
+a{
+    font-family: Play;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: inherit;
+}
+

@@ -1,0 +1,80 @@
+import "./MenuMobile.scss";
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+import "../../i18n";
+import { Link } from "react-router-dom";
+import { ChangeLanguageButton } from "../changeLanguageButton/ChangeLanguageButton";
+import { useMediaQuery } from "react-responsive";
+import { useNavigate } from "react-router-dom";
+import { Popup } from "../Popup/Popup";
+import { DemoButton } from "../demo-button/DemoButton"
+import { showPopupAsync, hidePopupAsync, showPopupDemoAsync } from "../../redux/actions";
+import { useSelector, useDispatch } from "react-redux";
+export const MenuMobile = () => {
+  const { t } = useTranslation();
+  let navigate = useNavigate();
+
+  const MobileMenu = useMediaQuery({ query: "(max-width: 428px)" });
+
+  const isActive = useSelector((state) => state.isActive);
+  const dispatch = useDispatch();
+
+
+  const [arrowUp, toggleArrow] = useState(false);
+  const [getLang, setLang] = useState(false);
+
+  console.log('localstorage', localStorage.getItem('lang'))
+
+
+  const toggle = () => {
+    toggleArrow(!arrowUp);
+  };
+
+  return (
+    <>
+      {MobileMenu && (
+        <div className="menu-wrapper-mobile">
+          <div className="menu-content">
+            <div
+              // className={`opacity ${isActive !== "none" ? "overlay" : ""}`}
+            ></div>
+            {isActive === "visible" || "animate" ? <Popup /> : null}
+
+            <div
+              // className={`opacity ${demo !== "none" ? "overlay" : ""}`}
+            ></div>
+
+            <div className="menu-logo-wrapper-mobile">
+              <Link to="/">
+                <div className="menu-logo-mobile"></div>
+              </Link>
+              <div
+                className="menu-close-button-mobile"
+                onClick={() => navigate(-1)}
+              ></div>
+            </div>
+            <div className="menu-nav-wrapper-mobile">
+              <nav className={`menu-nav-mobile_${localStorage.getItem('lang')} `}>
+              
+              <Link to="/">{t('home')}</Link>
+              <Link to="/">{t('how_it_works')}</Link>
+              <Link to="/">{t('who_we_are')}</Link>
+              <Link to="/">{t('faq')}</Link>
+
+
+
+
+              </nav>
+            </div>
+
+            <div className="menu-footer-wrapper-mobile">
+              <ChangeLanguageButton />
+              
+            <button class="contact-button" onClick={() => dispatch(showPopupAsync())}>{t('contact-us')}</button>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+};
