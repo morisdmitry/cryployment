@@ -350,7 +350,7 @@ export const IntroPage = () => {
           <header className="header-wrapper">
               <div className="logo"></div>
               <nav className="nav">
-              <a href="#top" className="link-button" >{t('home')}</a>
+              {/* <a href="#top" className="link-button" >{t('home')}</a> */}
               <button className="link-button" onClick={clickBlock1}>{t('home')}</button>
               <button className="link-button" onClick={clickBlock2}>{t('how_it_works')}</button>
               <button className="link-button" onClick={clickBlock3}>{t('who_we_are')}</button>

@@ -46,7 +46,7 @@ export const MenuMobile = () => {
             <div className="menu-nav-wrapper-mobile">
               <nav className={`menu-nav-mobile_${localStorage.getItem('lang')} `}>
               
-              <a href="/#top" className="link-button" >{t('test')}</a>
+              {/* <a href="/#top" className="link-button" >{t('test')}</a> */}
               <Link to="#top">{t('home')}</Link>
               <Link to="/">{t('how_it_works')}</Link>
               <Link to="/">{t('who_we_are')}</Link>
