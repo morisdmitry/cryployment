@@ -1,4 +1,4 @@
-import React, { useRef, useCallback } from "react";
+import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useDetectOutsideClick } from "../utils/useDetectOutsideClick";
 import { useMediaQuery } from "react-responsive";
@@ -20,8 +20,6 @@ export const ChangeLanguageButton = (props) => {
     const dropdownRef = useRef(null);
     const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
     const toggle = () => setIsActive(!isActive);
-
-    console.log('isActive', isActive)
 
     return (
       <>

@@ -25,6 +25,16 @@ export const Popup = () => {
   const [isEmailEmpty, setEmailEmpty] = useState(false);
   const [isCompanyEmpty, setCompanyEmpty] = useState(false);
 
+
+
+
+  const { i18n } = useTranslation();
+
+  const lang = i18n.language;
+
+
+
+
   const handleInput = (val, input) => {
     if (input === "name") {
       setNameInput(val);
@@ -133,7 +143,7 @@ export const Popup = () => {
               <div className="form-send-wrapper">
                 <div className="form-send">{t("form-send")}</div>
                 <div
-                  className="close-popup close-form-mobile"
+                  className="close-popup-mobile close-form-mobile"
 
                   onClick={() => dispatch(hidePopupAsync())}
                 ></div>
@@ -143,7 +153,7 @@ export const Popup = () => {
                 <div className="get-started-form-mobile">
                   {t("popup-header")}
                   <div
-                    className="close-popup"
+                    className="close-popup-mobile"
                     onClick={() => dispatch(hidePopupAsync())}
                   ></div>
                 </div>
@@ -220,7 +230,8 @@ export const Popup = () => {
                 <div className="get-started-form">
                 
                 <div className="popup-content">
-                  <span className="popup-header"> {t("popup-header")}</span>
+                  <span className={`popup-header ${lang === "ru" ? "ru-style" : ""}`}
+                  > {t("popup-header")}</span>
                   <span className="popup-text"> {t("popup-text")}</span>
 
                 </div>
