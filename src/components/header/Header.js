@@ -1,15 +1,13 @@
 import "./Header.scss";
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import "../../i18n";
 import { Link } from "react-router-dom";
 import { ChangeLanguageButton } from "../changeLanguageButton/ChangeLanguageButton";
 import { useMediaQuery } from "react-responsive";
-import { scrollUp } from "../utils/scrollUp";
-import { DemoButton } from "../demo-button/DemoButton";
 
-import { showPopupAsync, hidePopupAsync, showPopupDemoAsync } from "../../redux/actions";
-import { useSelector, useDispatch } from "react-redux";
+import { showPopupAsync } from "../../redux/actions";
+import { useDispatch } from "react-redux";
 
 export const Header = () => {
   const { t } = useTranslation();
@@ -18,7 +16,6 @@ export const Header = () => {
   const MobileHeader = useMediaQuery({ query: "(max-width: 428px)" });
 
 
-  const isActive = useSelector((state) => state.isActive);
   const dispatch = useDispatch();
 
   const [activeMenu, setActiveMenu] = useState(false)
@@ -26,7 +23,6 @@ export const Header = () => {
   const toggle = () => {
     setActiveMenu(!activeMenu)
   }
-  console.log('activeMenu', activeMenu)
 
 
   return (
@@ -53,14 +49,15 @@ export const Header = () => {
         <header className="header-wrapper">
             <div className="logo"></div>
             <nav className="nav">
-              <Link to="/">{t('home')}</Link>
+              
+              <Link to="/top">{t('home')}</Link>
               <Link to="/">{t('how_it_works')}</Link>
               <Link to="/">{t('who_we_are')}</Link>
               <Link to="/">{t('faq')}</Link>
 
             </nav>
             
-            <button class="contact-button" onClick={() => dispatch(showPopupAsync())}>{t('contact-us')}</button>
+            <button className="contact-button" onClick={() => dispatch(showPopupAsync())}>{t('contact-us')}</button>
 
             <ChangeLanguageButton/>
 

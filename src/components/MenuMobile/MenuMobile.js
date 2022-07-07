@@ -1,5 +1,5 @@
 import "./MenuMobile.scss";
-import React, { useState } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import "../../i18n";
 import { Link } from "react-router-dom";
@@ -7,8 +7,7 @@ import { ChangeLanguageButton } from "../changeLanguageButton/ChangeLanguageButt
 import { useMediaQuery } from "react-responsive";
 import { useNavigate } from "react-router-dom";
 import { Popup } from "../Popup/Popup";
-import { DemoButton } from "../demo-button/DemoButton"
-import { showPopupAsync, hidePopupAsync, showPopupDemoAsync } from "../../redux/actions";
+import { showPopupAsync} from "../../redux/actions";
 import { useSelector, useDispatch } from "react-redux";
 export const MenuMobile = () => {
   const { t } = useTranslation();
@@ -20,15 +19,6 @@ export const MenuMobile = () => {
   const dispatch = useDispatch();
 
 
-  const [arrowUp, toggleArrow] = useState(false);
-  const [getLang, setLang] = useState(false);
-
-  console.log('localstorage', localStorage.getItem('lang'))
-
-
-  const toggle = () => {
-    toggleArrow(!arrowUp);
-  };
 
   return (
     <>
@@ -56,7 +46,8 @@ export const MenuMobile = () => {
             <div className="menu-nav-wrapper-mobile">
               <nav className={`menu-nav-mobile_${localStorage.getItem('lang')} `}>
               
-              <Link to="/">{t('home')}</Link>
+              <a href="/#top" className="link-button" >{t('test')}</a>
+              <Link to="#top">{t('home')}</Link>
               <Link to="/">{t('how_it_works')}</Link>
               <Link to="/">{t('who_we_are')}</Link>
               <Link to="/">{t('faq')}</Link>

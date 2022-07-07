@@ -11,14 +11,12 @@ export const Faq = () => {
   const DefaultFaq = useMediaQuery({ query: "(min-width: 429px)" });
   const MobileFaq = useMediaQuery({ query: "(max-width: 428px)" });
 
-  const demo = false
-  const isActive = false
-
-
   const [switchSign, setSwitchSign] = useState(false);
   const [num, setNum] = useState(null);
-
-
+  
+  const { i18n } = useTranslation();
+  const lang = i18n.language;
+console.log('lang', lang)
 
   const toggle = (number) => {
 
@@ -39,8 +37,6 @@ export const Faq = () => {
     
   };
 
-  console.log('switchSign', switchSign)
-  console.log('num', num)
   return (
     <>
       {MobileFaq && (
@@ -49,13 +45,15 @@ export const Faq = () => {
         <div className="block-6-mobile">
         <div className="block6-wrapper-mobile">
             <div className="block6-header-wrapper-mobile">
-            <span className="header6-mobile">{t("block5-header1")}</span>
+            <span className={`header6-mobile ${lang === "ru" ? "ru-style-mobile" : ""}`}
+            >{t("block5-header1")}</span>
             </div>
 
             <div className="block6-text-wrapper-mobile">
             <div className="faq-el-mobile">
                 <div className="faq-text-block-mobile">
-                    <span className="faq-text-mobile">{t("block5-question1")}</span>
+                    <span className={`faq-text-mobile ${lang === "ru" ? "ru-style-mobile" : ""}`}
+                    >{t("block5-question1")}</span>
                     <div className="faq-text-swich-mobile" onClick={() => toggle(1)}>
                         <div className= {switchSign  & num === 1 ? "plus-mobile" : "minus-mobile"}>
                         </div>
@@ -67,7 +65,8 @@ export const Faq = () => {
 
             <div className="faq-el-mobile">
                 <div className="faq-text-block-mobile">
-                    <span className="faq-text-mobile">{t("block5-question2")}</span>
+                    <span className={`faq-text-mobile ${lang === "ru" ? "ru-style-mobile" : ""}`}
+                    >{t("block5-question2")}</span>
                     <div className="faq-text-swich-mobile" onClick={() => toggle(2)}>
                         <div className= {switchSign  & num === 2 ? "plus-mobile" : "minus-mobile"}>
                         </div>
@@ -81,7 +80,8 @@ export const Faq = () => {
 
             <div className="faq-el-mobile">
                 <div className="faq-text-block-mobile">
-                    <span className="faq-text-mobile">{t("block5-question3")}</span>
+                    <span className={`faq-text-mobile ${lang === "ru" ? "ru-style-mobile" : ""}`}
+                    >{t("block5-question3")}</span>
                     <div className="faq-text-swich-mobile" onClick={() => toggle(3)}>
                         <div className= {switchSign  & num === 3 ? "plus-mobile" : "minus-mobile"}>
                         </div>
@@ -93,7 +93,8 @@ export const Faq = () => {
 
             <div className="faq-el-mobile">
                 <div className="faq-text-block-mobile">
-                    <span className="faq-text-mobile">{t("block5-question4")}</span>
+                    <span className={`faq-text-mobile ${lang === "ru" ? "ru-style-mobile" : ""}`}
+                    >{t("block5-question4")}</span>
                     <div className="faq-text-swich-mobile" onClick={() => toggle(4)}>
                         <div className= {switchSign  & num === 4 ? "plus-mobile" : "minus-mobile"}>
                         </div>
@@ -105,7 +106,8 @@ export const Faq = () => {
 
             <div className="faq-el-mobile">
                 <div className="faq-text-block-mobile">
-                    <span className="faq-text-mobile">{t("block5-question5")}</span>
+                    <span className={`faq-text-mobile ${lang === "ru" ? "ru-style-mobile" : ""}`}
+                    >{t("block5-question5")}</span>
                     <div className="faq-text-swich-mobile" onClick={() => toggle(5)}>
                         <div className= {switchSign  & num === 5 ? "plus-mobile" : "minus-mobile"}>
                         </div>
@@ -137,13 +139,15 @@ export const Faq = () => {
         <div className="block-6">
         <div className="block6-wrapper">
             <div className="block6-header-wrapper">
-            <span className="header6-mobile">{t("block5-header1")}</span>
+            <span className={`header6-mobile ${lang === "ru" ? "ru-style" : ""}`}
+            >{t("block5-header1")}</span>
             </div>
 
             <div className="block6-text-wrapper">
             <div className="faq-el">
                 <div className="faq-text-block">
-                    <span className="faq-text">{t("block5-question1")}</span>
+                    <span className={`faq-text ${lang === "ru" ? "ru-style" : ""}`}
+                    >{t("block5-question1")}</span>
                     <div className="faq-text-swich" onClick={() => toggle(1)}>
                         <div className= {switchSign  & num === 1 ? "plus" : "minus"}>
                         </div>
@@ -154,7 +158,8 @@ export const Faq = () => {
             </div>
             <div className="faq-el">
                 <div className="faq-text-block">
-                    <span className="faq-text">{t("block5-question2")}</span>
+                    <span className={`faq-text ${lang === "ru" ? "ru-style" : ""}`}
+                    >{t("block5-question2")}</span>
                     <div className="faq-text-swich" onClick={() => toggle(2)}>
                         <div className= {switchSign && num === 2 ? "plus" : "minus"}>
                         
@@ -167,7 +172,8 @@ export const Faq = () => {
             
             <div className="faq-el">
                 <div className="faq-text-block">
-                    <span className="faq-text">{t("block5-question3")}</span>
+                    <span className={`faq-text ${lang === "ru" ? "ru-style" : ""}`}
+                    >{t("block5-question3")}</span>
                     <div className="faq-text-swich" onClick={() => toggle(3)}>
                         <div className= {switchSign  & num === 3 ? "plus" : "minus"}>
                         </div>
@@ -179,7 +185,8 @@ export const Faq = () => {
             
             <div className="faq-el">
                 <div className="faq-text-block">
-                    <span className="faq-text">{t("block5-question4")}</span>
+                    <span className={`faq-text ${lang === "ru" ? "ru-style" : ""}`}
+                    >{t("block5-question4")}</span>
                     <div className="faq-text-swich" onClick={() => toggle(4)}>
                         <div className= {switchSign  & num === 5 ? "plus" : "minus"}>
                         </div>
@@ -191,7 +198,8 @@ export const Faq = () => {
             
             <div className="faq-el">
                 <div className="faq-text-block">
-                    <span className="faq-text">{t("block5-question5")}</span>
+                    <span className={`faq-text ${lang === "ru" ? "ru-style" : ""}`}
+                    >{t("block5-question5")}</span>
                     <div className="faq-text-swich" onClick={() => toggle(5)}>
                         <div className= {switchSign  & num === 5 ? "plus" : "minus"}>
                         </div>

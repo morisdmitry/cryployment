@@ -6,7 +6,7 @@ body{
 .main-wrapper{
 
     color: #FFFFFF;
-    max-width: 1400px;
+    /* max-width: 1400px; */
     min-width: 1000px;
     margin: 0 auto;
 }
