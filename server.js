@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, "/build")));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const endpoints = ["/", "/platform", "/study-page", "what-is-ergonza", "methodology", "team"];
+const endpoints = ["/", "/about_us", "/how_it_works", "who_we_are"];
 
 endpoints.forEach((endpoint) => {
   app.get(endpoint, (req, res) => {
