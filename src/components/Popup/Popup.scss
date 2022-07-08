@@ -32,28 +32,30 @@
 }
 
 .back-home {
-  width: 180px;
-  height: 60px;
-  padding: 0 5px 0 5px;
-  border-radius: 12px;
-  background: #17bcb2;
-  color: #ffffff;
-  font-family: "Proxima Nova Thin", sans-serif;
+  margin: 0 40px 0 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 136px;
+  font-family: 'Play';
+  height: 35px;
+  padding: 8px 12px;
+  background: #FFD579;
+  border-radius: 8px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
+  gap: 12px;
   line-height: 29px;
   outline: none;
   border: none;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px auto;
+  color: #131313;
   &:hover {
-    background: #13a9a0;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #FFD579;
   }
   &:active {
-    background: #109c94;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), #FFD579;
   }
 }
 
