@@ -4,7 +4,7 @@ let http = require("request");
 
 module.exports.sendMsg = (req, res) => {
   sendMesOnTelegram(req, res);
-  sendMesOnMail(req, res);
+  // sendMesOnMail(req, res);
 };
 
 function sendMesOnTelegram(req, res) {
@@ -52,14 +52,14 @@ function sendMesOnMail(req, res) {
     port: 465,
     secure: true,
     auth: {
-      user: "mytestaccpleaseignore@gmail.com", // generated ethereal user
+      user: "fromcryploymentpleaseignore@gmail.com", // generated ethereal user
       pass: "pcfkmdeutbkenpej", // generated ethereal password
     },
   });
 
   var mail = {
-    from: "mytestaccpleaseignore@gmail.com",
-    to: "moris.dmitry@gmail.com",
+    from: "fromcryploymentpleaseignore@gmail.com",
+    to: "dmitry_shikhov@mail.ru",
     subject: "Cryployment",
     html: `<b>Name:</b> ${reqBody.name}<br><b>Email:</b> ${reqBody.email}<br><b>Company:</b> ${reqBody.company}`,
   };
