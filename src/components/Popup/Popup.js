@@ -141,7 +141,8 @@ export const Popup = () => {
           >
             {isFormSend && isRequestSuccess ? (
               <div className="form-send-wrapper">
-                <div className="form-send">{t("form-send")}</div>
+                <div className="form-send-mobile"
+                >{t("form-send")}</div>
                 <div
                   className="close-popup-mobile close-form-mobile"
 
@@ -150,7 +151,8 @@ export const Popup = () => {
               </div>
             ) : (
               <>
-                <div className="get-started-form-mobile">
+                <div className={`get-started-form-mobile ${lang === "ru" ? "ru-style-mobile" : ""}`}
+                >
                   {t("popup-header")}
                   <div
                     className="close-popup-mobile"
