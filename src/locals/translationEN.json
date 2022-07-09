@@ -56,6 +56,8 @@
     "name": "Your name",
     "company": "Your company",
     "email": "Your Email",
-    "send": "Leave a request"
+    "send": "Leave a request",
+
+    "form-send": "We will contact you as soon as possible"
 
 }
